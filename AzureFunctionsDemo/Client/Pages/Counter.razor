@@ -1,0 +1,23 @@
+﻿@page "/counter"
+@using System.Threading;
+
+<p>Time Remaining: @Count seconds</p>
+
+<button class="btn btn-primary" @onclick="StartCountdown">Click me</button>
+
+@code {
+    private int Count { get; set; } = 900;
+
+    void StartCountdown()
+    {
+        var timer = new Timer(new TimerCallback(_ =>
+        {
+            if (Count <= 0) return;
+            Count--;
+
+            // Note that the following line is necessary because otherwise
+            // Blazor would not recognize the state change and not refresh the UI
+            this.StateHasChanged();
+        }), null, 1000, 1000);
+    }
+}

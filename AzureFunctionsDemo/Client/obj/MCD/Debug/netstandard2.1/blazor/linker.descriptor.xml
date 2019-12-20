@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="AzureFunctionsDemo.Client">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>

@@ -1,0 +1,8 @@
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\bin\Debug\netstandard2.1\AzureFunctionsDemo.Shared.deps.json
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\bin\Debug\netstandard2.1\AzureFunctionsDemo.Shared.dll
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\bin\Debug\netstandard2.1\AzureFunctionsDemo.Shared.pdb
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\obj\Debug\netstandard2.1\AzureFunctionsDemo.Shared.csprojAssemblyReference.cache
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\obj\Debug\netstandard2.1\AzureFunctionsDemo.Shared.AssemblyInfoInputs.cache
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\obj\Debug\netstandard2.1\AzureFunctionsDemo.Shared.AssemblyInfo.cs
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\obj\Debug\netstandard2.1\AzureFunctionsDemo.Shared.dll
+C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Shared\obj\Debug\netstandard2.1\AzureFunctionsDemo.Shared.pdb

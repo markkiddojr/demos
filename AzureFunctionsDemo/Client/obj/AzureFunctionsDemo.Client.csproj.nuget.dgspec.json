@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Client\\AzureFunctionsDemo.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Client\\AzureFunctionsDemo.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Client\\AzureFunctionsDemo.Client.csproj",
+        "projectName": "AzureFunctionsDemo.Client",
+        "projectPath": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Client\\AzureFunctionsDemo.Client.csproj",
+        "packagesPath": "C:\\Users\\Marky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\AzureFunctionsDemo.Shared.csproj": {
+                "projectPath": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\AzureFunctionsDemo.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[3.1.0-preview4.19579.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview4.19579.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview4.19579.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.1.0-preview4.19579.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\AzureFunctionsDemo.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\AzureFunctionsDemo.Shared.csproj",
+        "projectName": "AzureFunctionsDemo.Shared",
+        "projectPath": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\AzureFunctionsDemo.Shared.csproj",
+        "packagesPath": "C:\\Users\\Marky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marky\\Source\\Repos\\AzureFunctionsDemo\\AzureFunctionsDemo\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
