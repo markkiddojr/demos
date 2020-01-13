@@ -100,5 +100,3 @@ C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\obj\MCD
 C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\obj\MCD\Debug\netstandard2.1\Razor\Pages\CoreVFramework.razor.g.cs
 C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\obj\MCD\Debug\netstandard2.1\Razor\Pages\Intro.razor.g.cs
 C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\obj\MCD\Debug\netstandard2.1\Razor\Pages\WhatIsFunctions.razor.g.cs
-C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\bin\MCD\Debug\netstandard2.1\BlazorDemo\web.config
-C:\Users\Marky\Source\Repos\AzureFunctionsDemo\AzureFunctionsDemo\Client\bin\MCD\Debug\netstandard2.1\BlazorDemo\AzureFunctionsDemo.Client\dist\_framework\blazor.boot.json
