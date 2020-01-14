@@ -148,6 +148,14 @@ app {
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
     }
+
+    #funcImg{
+        display:none;
+    }
+}
+
+#funcImg{
+    display:block;
 }
 
 @media (min-width: 768px) {
@@ -207,9 +215,13 @@ p {
 .card-body{
     display: flex;
     overflow-y: auto;  
-    height: 55vh;
+    height: 60vh;
 }
   
 .card {
     flex: 0 0 auto;
+}
+
+.supported {
+    width:150px;
 }

@@ -24,6 +24,10 @@
             {
                 <Blazor />
             }
+            @if (SlideState == State.WhyServerless)
+            {
+                <WhyNetServerless />
+            }
         </div>
         <div class="card-footer">
             <div class="row">
@@ -31,7 +35,7 @@
                     <button class="btn btn-primary w-100 ml-1 mr-1" hidden="@SlideState.Equals(State.Intro)" @onclick="Back">Previous</button>
                 </div>
                 <div class="col-6 col-lg-4">
-                    <button class="btn btn-secondary w-100 ml-1 mr-1" hidden="@SlideState.Equals(State.Blazor)" @onclick="Next">Next</button>
+                    <button class="btn btn-secondary w-100 ml-1 mr-1" hidden="@SlideState.Equals(State.WhyServerless)" @onclick="Next">Next</button>
                 </div>
             </div>
         </div>
@@ -42,7 +46,7 @@
     </div>
 
 @code{
-    private enum State { Intro, CoreVsFramework, WhatIsFunctions, ChangesInArchitecture, Blazor }
+    private enum State { Intro, CoreVsFramework, WhatIsFunctions, ChangesInArchitecture, Blazor, WhyServerless }
     private State SlideState = State.Intro;
 
     void Back()
@@ -72,7 +76,10 @@
                 SlideState = (back) ? State.WhatIsFunctions : State.Blazor;
                 break;
             case State.Blazor:
-                SlideState = (back) ? State.ChangesInArchitecture : State.Blazor;
+                SlideState = (back) ? State.ChangesInArchitecture : State.WhyServerless;
+                break;
+            case State.WhyServerless:
+                SlideState = (back) ? State.Blazor : State.WhyServerless;
                 break;
             default:
                 break;
