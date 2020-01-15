@@ -1,30 +1,33 @@
-﻿@page "/"
+﻿@using Newtonsoft.Json.Linq
+@inject HttpClient http
+
+@page "/"
     <div class="card" style="z-index:8;">
         <div class="card-header">
             <h1>Azure Functions</h1>
         </div>
         <div class="card-body">
-            @if (SlideState == State.Intro)
+            @if (SlideState == ((int)State.Intro))
             {
                 <Intro />
             }
-            @if (SlideState == State.CoreVsFramework)
+            @if (SlideState == ((int)State.CoreVsFramework))
             {
                 <CoreVFramework />
             }
-            @if (SlideState == State.WhatIsFunctions)
+            @if (SlideState == ((int)State.WhatIsFunctions))
             {
                 <WhatIsFunctions />
             }
-            @if (SlideState == State.ChangesInArchitecture)
+            @if (SlideState == ((int)State.ChangesInArchitecture))
             {
                 <ChangesInArchitecture />
             }
-            @if (SlideState == State.Blazor)
+            @if (SlideState == ((int)State.Blazor))
             {
                 <Blazor />
             }
-            @if (SlideState == State.WhyServerless)
+            @if (SlideState == ((int)State.WhyServerless))
             {
                 <WhyNetServerless />
             }
@@ -32,10 +35,10 @@
         <div class="card-footer">
             <div class="row">
                 <div class="col-6 col-lg-4">
-                    <button class="btn btn-primary w-100 ml-1 mr-1" hidden="@SlideState.Equals(State.Intro)" @onclick="Back">Previous</button>
+                    <button class="btn btn-primary w-100 ml-1 mr-1" hidden="@SlideState.Equals((int)State.Intro)" @onclick="Back">Previous</button>
                 </div>
                 <div class="col-6 col-lg-4">
-                    <button class="btn btn-secondary w-100 ml-1 mr-1" hidden="@SlideState.Equals(State.WhyServerless)" @onclick="Next">Next</button>
+                    <button class="btn btn-secondary w-100 ml-1 mr-1" hidden="@SlideState.Equals((int)State.WhyServerless)" @onclick="Next">Next</button>
                 </div>
             </div>
         </div>
@@ -47,7 +50,7 @@
 
 @code{
     private enum State { Intro, CoreVsFramework, WhatIsFunctions, ChangesInArchitecture, Blazor, WhyServerless }
-    private State SlideState = State.Intro;
+    private int SlideState = 0;
 
     void Back()
     {
@@ -59,32 +62,13 @@
         UpdateState(false);
     }
 
-    void UpdateState(bool back)
-    {
-        switch (SlideState)
-        {
-            case State.Intro:
-                SlideState = (back) ? State.Intro : State.CoreVsFramework;
-                break;
-            case State.CoreVsFramework:
-                SlideState = (back) ? State.Intro : State.WhatIsFunctions;
-                break;
-            case State.WhatIsFunctions:
-                SlideState = (back) ? State.CoreVsFramework : State.ChangesInArchitecture;
-                break;
-            case State.ChangesInArchitecture:
-                SlideState = (back) ? State.WhatIsFunctions : State.Blazor;
-                break;
-            case State.Blazor:
-                SlideState = (back) ? State.ChangesInArchitecture : State.WhyServerless;
-                break;
-            case State.WhyServerless:
-                SlideState = (back) ? State.Blazor : State.WhyServerless;
-                break;
-            default:
-                break;
-        }
+    async Task UpdateState(bool back)
+    {//http://localhost:7071
+        var endpoint = $"https://mk-azure-blazor-demo.azurewebsites.net/api/BlazorDemoStateHttpTrigger?back="+(back ? "true":"false");
+        SlideState = await http.PostJsonAsync<int>(endpoint, new {state = SlideState});
+        Console.WriteLine("Response = " + SlideState);
         this.StateHasChanged();
     }
+    
 
 }

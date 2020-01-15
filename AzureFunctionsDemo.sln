@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsDemo.Client",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsDemo.Shared", "AzureFunctionsDemo\Shared\AzureFunctionsDemo.Shared.csproj", "{32AF2EE6-4378-4E47-A15E-5F0243ADA8A6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsDemo", "AzureFunctionsDemo\AzureFunctions\AzureFunctionsDemo.csproj", "{F133E1E6-54E7-4FA6-A9F0-58A6ECABA13D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{32AF2EE6-4378-4E47-A15E-5F0243ADA8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32AF2EE6-4378-4E47-A15E-5F0243ADA8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32AF2EE6-4378-4E47-A15E-5F0243ADA8A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F133E1E6-54E7-4FA6-A9F0-58A6ECABA13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F133E1E6-54E7-4FA6-A9F0-58A6ECABA13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F133E1E6-54E7-4FA6-A9F0-58A6ECABA13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F133E1E6-54E7-4FA6-A9F0-58A6ECABA13D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
